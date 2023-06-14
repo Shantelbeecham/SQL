@@ -1,0 +1,28 @@
+--Design a store database
+
+
+CREATE TABLE ketones(ID INTEGER PRIMARY KEY,item TEXT,flavor TEXT,price INTEGER,quantity INTEGER,size INTEGER);
+
+INSERT INTO ketones VALUES(1,"KETO OS NAT","Fresa freeze","130","20","17.9g");
+INSERT INTO ketones VALUES(2,"KETO OS NAT","Berry blue","130","20", "17.9g");
+INSERT INTO ketones VALUES(3,"KETO OS NAT", "MAUI PUNCH","130","20","17.9g");
+INSERT INTO ketones VALUES(4,"KETO OS PRO", "DARK CHOCOLATE","130","20","17.9g");
+INSERT INTO ketones VALUES(5,"KETO OS PRO", "BANANA CREAM", "130", "20", "17.9g");
+INSERT INTO ketones VALUES(6,"KETO UP", "BLUE RAZZ", "67","12","12oz");
+INSERT INTO ketones VALUES(7,"KETO UP","CHERRY LIGHTNING","67", "12","12oz");
+INSERT INTO ketones VALUES(8,"KETO UP", "ORANGE VANILLA COLA", "67","12","12oz");
+INSERT INTO ketones VALUES(9,"KETO OS PRO", "ORANGE DREAM", "130", "20","17.9g");
+INSERT INTO ketones VALUES(10,"KETO OS PRO", "CHOCOLATE SWIRL", "130","20", "17.9g");
+INSERT INTO ketones VALUES(11,"KETO OS NAT", "SWiSS CACAO","130","20","17.9g");
+INSERT INTO ketones VALUES(12,"KETO OS NAT", "SPLASH","130","20","17.9g");
+INSERT INTO ketones VALUES(13,"KETO UP","UNICORN SLAM","67","12","12oz");
+INSERT INTO ketones VALUES(14,"KETO OS NAT","GUMMY BEAR","130", "20", "17.9g");
+INSERT INTO ketones VALUES(15,"KETO OS PRO", "APPLE BUTTER", "130", "20", "17.9g");
+
+--Display the database ordered by item
+SELECT*FROM ketones ORDER BY item;
+
+--Display the database ordered by max price
+
+SELECT max(price)FROM ketones
+
